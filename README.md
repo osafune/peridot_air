@@ -25,6 +25,8 @@ PERIDOT-AIRは Intel社製 CycloneIV E FPGA(EP4CE6E22C8N)を搭載したプロ�
 	- オンボードmicro-Bコネクタからの4.5V～5.5V、またはArduinoピンソケットのVIN端子からの4.5V～9V
 	FPGA電源(1.2V、2.5V)およびI/O電源(3.3V)はオンボードで生成
 
+<img src="https://raw.githubusercontent.com/osafune/peridot_air/master/img/air_block.png">
+
 
 Board Pinout
 ------------
