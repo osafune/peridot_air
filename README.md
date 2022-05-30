@@ -36,11 +36,16 @@ Board Pinout
 [Large size](https://raw.githubusercontent.com/osafune/peridot_air/master/img/air_pinout_large.png)
 
 
-JTAG Connector
---------------
+Configuration
+-------------
+ボード上のJTAGコネクタ経由でQuartusPrime／NiosII EDSからsofファイルまたはjicファイルのダウンロード、SignalTapII（組み込みロジックアナライザ）、NiosIIプロセッサのJtag-gdbを使うことができます。  
+[PERIDOT-Airのプロジェクト](https://github.com/osafune/peridot_air/tree/main/fpga)を流用する場合、jicファイルは自動で生成されます。
+- 参考：[FPGA経由でEPCQデバイスへプログラミング](https://www.macnica.co.jp/business/semiconductor/articles/intel/122065/)
+
 同梱のJTAG-CONN変換基板を下記のように接続してUSB-Blasterダウンロードケーブルを使用してください。
 
 <img src="https://raw.githubusercontent.com/osafune/peridot_air/master/img/air_jtagconn.jpg" width="600" height="333">
+
 
 
 Resource
