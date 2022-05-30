@@ -5,10 +5,9 @@ Overview
 --------
 <img src="https://raw.githubusercontent.com/osafune/peridot_air/master/img/air_thumb.jpg">
 
-PERIDOT-AIRは Intel社製 CycloneIV E FPGA(EP4CE6E22C8N)を搭載したプロトタイピング向けFPGAボードです。
-FPGAの他に256MbitのSDRAM、SD/MMCカードスロット、OSCおよびコンフィギュレーションROMをオンボードに搭載しており、インスタントオンで動作させることができます。
-搭載FPGAは約15万ゲート規模で、ソフトマクロCPUを使った組み込み用SoC開発やディジタル回路の実装に最適です。
-ボード形状はArduinoと同一になっており、Arduino用のホルダーや各種シールドを使うことができます。
+PERIDOT-AIRは Intel社製 CycloneIV E FPGA(EP4CE6E22C8N)を搭載したプロトタイピング向けFPGAボードです。FPGAの他に256MbitのSDRAM、SD/MMCカードスロット、OSCおよびコンフィギュレーションROMをオンボードに搭載しており、インスタントオンで動作させることができます。  
+搭載FPGAは約15万ゲート規模で、ソフトマクロCPUを使った組み込み用SoC開発やディジタル回路の実装に最適です。  
+ボード形状はArduinoと同一になっており、Arduino用のホルダーや各種シールドを使うことができます。  
 
 - 搭載FPGAデバイス
 	- Intel Cyclone IV Eファミリ EP4CE6E22C8N
