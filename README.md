@@ -19,7 +19,7 @@ PERIDOT-AIRは Intel社製 CycloneIV E FPGA(EP4CE6E22C8N)を搭載したプロ�
 	- SD/MMCカードスロット
 	- ユーザーLED 2個
 - ユーザーI/O数
-	- 28本（Arduinoタイプピンソケット）
+	- 28本（Arduinoタイプピンソケット）  
 	⚠️I/O電圧は3.3Vです。5V信号入力はできません。
 - 動作電圧
 	- オンボードmicro-Bコネクタからの4.5V～5.5V、またはArduinoピンソケットのVIN端子からの4.5V～9V
@@ -43,12 +43,15 @@ JTAG Connector
 Resource
 --------
 - [回路図 (pdf)](https://raw.githubusercontent.com/osafune/peridot_air/master/pcb/peridot_air_pcb_schem_rev1.1r.pdf)
+- [PERIDOTペリフェラル](https://github.com/osafune/peridot_peripherals)
+- [MISCモジュール集](https://github.com/osafune/misc_hdl_module)
 
 
 Documents
 ---------
 - [QuartusPrime LiteEdition ダウンロード](https://www.intel.com/content/www/us/en/software-kit/684216/intel-quartus-prime-lite-edition-design-software-version-21-1-for-windows.html)
 - [Intel CycloneIV E のドキュメント](https://www.intel.co.jp/content/www/jp/ja/products/details/fpga/cyclone/iv/docs.html?s=Newest)
+- [Platform Designer のドキュメント](https://www.intel.co.jp/content/www/jp/ja/software/programmable/quartus-prime/qts-platform-designer.html)
 
 
 Contant Us
