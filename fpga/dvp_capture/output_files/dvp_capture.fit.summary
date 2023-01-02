@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Jan 02 21:15:14 2023
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : dvp_capture
+Top-level Entity Name : dvp_capture_top
+Family : Cyclone IV E
+Device : EP4CE6E22C8
+Timing Models : Final
+Total logic elements : 3,452 / 6,272 ( 55 % )
+    Total combinational functions : 2,800 / 6,272 ( 45 % )
+    Dedicated logic registers : 2,273 / 6,272 ( 36 % )
+Total registers : 2368
+Total pins : 84 / 92 ( 91 % )
+Total virtual pins : 0
+Total memory bits : 51,200 / 276,480 ( 19 % )
+Embedded Multiplier 9-bit elements : 4 / 30 ( 13 % )
+Total PLLs : 2 / 2 ( 100 % )

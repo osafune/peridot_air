@@ -1,0 +1,35 @@
+	component c4e_dvp_core is
+		port (
+			clk_100m_clk  : in    std_logic                     := 'X';             -- clk
+			clk_25m_clk   : in    std_logic                     := 'X';             -- clk
+			dvp_pclk      : in    std_logic                     := 'X';             -- pclk
+			dvp_data      : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- data
+			dvp_href      : in    std_logic                     := 'X';             -- href
+			dvp_vsync     : in    std_logic                     := 'X';             -- vsync
+			dvp_reseto_n  : out   std_logic;                                        -- reseto_n
+			host_txd      : out   std_logic;                                        -- txd
+			host_rxd      : in    std_logic                     := 'X';             -- rxd
+			host_cts      : in    std_logic                     := 'X';             -- cts
+			host_rts      : out   std_logic;                                        -- rts
+			led_export    : out   std_logic_vector(3 downto 0);                     -- export
+			reset_reset_n : in    std_logic                     := 'X';             -- reset_n
+			sccb_sck      : inout std_logic                     := 'X';             -- sck
+			sccb_data     : inout std_logic                     := 'X';             -- data
+			sdr_addr      : out   std_logic_vector(12 downto 0);                    -- addr
+			sdr_ba        : out   std_logic_vector(1 downto 0);                     -- ba
+			sdr_cas_n     : out   std_logic;                                        -- cas_n
+			sdr_cke       : out   std_logic;                                        -- cke
+			sdr_cs_n      : out   std_logic;                                        -- cs_n
+			sdr_dq        : inout std_logic_vector(15 downto 0) := (others => 'X'); -- dq
+			sdr_dqm       : out   std_logic_vector(1 downto 0);                     -- dqm
+			sdr_ras_n     : out   std_logic;                                        -- ras_n
+			sdr_we_n      : out   std_logic;                                        -- we_n
+			tmds_videoclk : in    std_logic                     := 'X';             -- videoclk
+			tmds_txclk    : in    std_logic                     := 'X';             -- txclk
+			tmds_data     : out   std_logic_vector(2 downto 0);                     -- data
+			tmds_data_n   : out   std_logic_vector(2 downto 0);                     -- data_n
+			tmds_clock    : out   std_logic;                                        -- clock
+			tmds_clock_n  : out   std_logic                                         -- clock_n
+		);
+	end component c4e_dvp_core;
+

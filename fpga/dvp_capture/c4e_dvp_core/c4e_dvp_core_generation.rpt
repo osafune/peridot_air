@@ -1,0 +1,155 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\PROJECT\PERIDOT\c72_ubshield\fpga\dvp_capture\c4e_dvp_core.qsys --block-symbol-file --output-directory=C:\PROJECT\PERIDOT\c72_ubshield\fpga\dvp_capture\c4e_dvp_core --family="Cyclone IV E" --part=EP4CE6E22C8
+Progress: Loading dvp_capture/c4e_dvp_core.qsys
+Progress: Reading input file
+Progress: Adding cam [peridot_cam 20.1]
+Progress: Parameterizing module cam
+Progress: Adding core_clk [clock_source 20.1]
+Progress: Parameterizing module core_clk
+Progress: Adding led [altera_avalon_pio 20.1]
+Progress: Parameterizing module led
+Progress: Adding peri_clk [clock_source 20.1]
+Progress: Parameterizing module peri_clk
+Progress: Adding peripheral_bridge [altera_avalon_mm_bridge 20.1]
+Progress: Parameterizing module peripheral_bridge
+Progress: Adding sdram [altera_avalon_new_sdram_controller 20.1]
+Progress: Parameterizing module sdram
+Progress: Adding sysid [altera_avalon_sysid_qsys 20.1]
+Progress: Parameterizing module sysid
+Progress: Adding uart_to_avmm_bridge [uart_bridge_core 1.0]
+Progress: Parameterizing module uart_to_avmm_bridge
+Progress: Adding vga [peridot_vga_controller 20.1]
+Progress: Parameterizing module vga
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: c4e_dvp_core.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: c4e_dvp_core.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: c4e_dvp_core.sysid: Time stamp will be automatically updated when this component is generated.
+Info: c4e_dvp_core.uart_to_avmm_bridge.st_bytes_to_packets_0.out_packets_stream/packets_to_master_0.in_stream: Max channel is 255 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: c4e_dvp_core.uart_to_avmm_bridge.st_bytes_to_packets_0.out_packets_stream/packets_to_master_0.in_stream: The source has a channel signal of 8 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Info: c4e_dvp_core.uart_to_avmm_bridge.packets_to_master_0.out_stream/st_packets_to_bytes_0.in_packets_stream: Max channel is 0 for source and 255 for sink. Avalon-ST Adapter will be inserted..
+Info: c4e_dvp_core.uart_to_avmm_bridge.packets_to_master_0.out_stream/st_packets_to_bytes_0.in_packets_stream: The sink has a channel signal of 8 bits, but the source does not. Avalon-ST Adapter will be inserted.
+Info: c4e_dvp_core.vga: Recommended video clock frequency is 25.200 MHz.
+Warning: c4e_dvp_core.cam: Interrupt sender cam.irq_s1 is not connected to an interrupt receiver
+Warning: c4e_dvp_core.vga: Interrupt sender vga.irq_csr is not connected to an interrupt receiver
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\PROJECT\PERIDOT\c72_ubshield\fpga\dvp_capture\c4e_dvp_core.qsys --synthesis=VERILOG --output-directory=C:\PROJECT\PERIDOT\c72_ubshield\fpga\dvp_capture\c4e_dvp_core\synthesis --family="Cyclone IV E" --part=EP4CE6E22C8
+Progress: Loading dvp_capture/c4e_dvp_core.qsys
+Progress: Reading input file
+Progress: Adding cam [peridot_cam 20.1]
+Progress: Parameterizing module cam
+Progress: Adding core_clk [clock_source 20.1]
+Progress: Parameterizing module core_clk
+Progress: Adding led [altera_avalon_pio 20.1]
+Progress: Parameterizing module led
+Progress: Adding peri_clk [clock_source 20.1]
+Progress: Parameterizing module peri_clk
+Progress: Adding peripheral_bridge [altera_avalon_mm_bridge 20.1]
+Progress: Parameterizing module peripheral_bridge
+Progress: Adding sdram [altera_avalon_new_sdram_controller 20.1]
+Progress: Parameterizing module sdram
+Progress: Adding sysid [altera_avalon_sysid_qsys 20.1]
+Progress: Parameterizing module sysid
+Progress: Adding uart_to_avmm_bridge [uart_bridge_core 1.0]
+Progress: Parameterizing module uart_to_avmm_bridge
+Progress: Adding vga [peridot_vga_controller 20.1]
+Progress: Parameterizing module vga
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: c4e_dvp_core.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: c4e_dvp_core.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: c4e_dvp_core.sysid: Time stamp will be automatically updated when this component is generated.
+Info: c4e_dvp_core.uart_to_avmm_bridge.st_bytes_to_packets_0.out_packets_stream/packets_to_master_0.in_stream: Max channel is 255 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: c4e_dvp_core.uart_to_avmm_bridge.st_bytes_to_packets_0.out_packets_stream/packets_to_master_0.in_stream: The source has a channel signal of 8 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Info: c4e_dvp_core.uart_to_avmm_bridge.packets_to_master_0.out_stream/st_packets_to_bytes_0.in_packets_stream: Max channel is 0 for source and 255 for sink. Avalon-ST Adapter will be inserted..
+Info: c4e_dvp_core.uart_to_avmm_bridge.packets_to_master_0.out_stream/st_packets_to_bytes_0.in_packets_stream: The sink has a channel signal of 8 bits, but the source does not. Avalon-ST Adapter will be inserted.
+Info: c4e_dvp_core.vga: Recommended video clock frequency is 25.200 MHz.
+Warning: c4e_dvp_core.cam: Interrupt sender cam.irq_s1 is not connected to an interrupt receiver
+Warning: c4e_dvp_core.vga: Interrupt sender vga.irq_csr is not connected to an interrupt receiver
+Info: c4e_dvp_core: Generating c4e_dvp_core "c4e_dvp_core" for QUARTUS_SYNTH
+Info: Inserting clock-crossing logic between cmd_demux.src0 and cmd_mux.sink0
+Info: Inserting clock-crossing logic between rsp_demux.src0 and rsp_mux.sink0
+Info: cam: generating top-level entity peridot_cam
+Info: cam: "c4e_dvp_core" instantiated peridot_cam "cam"
+Info: led: Starting RTL generation for module 'c4e_dvp_core_led'
+Info: led:   Generation command is [exec C:/develop/quartus/20.1le/quartus/bin64/perl/bin/perl.exe -I C:/develop/quartus/20.1le/quartus/bin64/perl/lib -I C:/develop/quartus/20.1le/quartus/sopc_builder/bin/europa -I C:/develop/quartus/20.1le/quartus/sopc_builder/bin -I C:/develop/quartus/20.1le/quartus/../ip/altera/sopc_builder_ip/common -I C:/develop/quartus/20.1le/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/develop/quartus/20.1le/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=c4e_dvp_core_led --dir=C:/Users/Regulus/AppData/Local/Temp/alt9359_3780123013117976662.dir/0003_led_gen/ --quartus_dir=C:/develop/quartus/20.1le/quartus --verilog --config=C:/Users/Regulus/AppData/Local/Temp/alt9359_3780123013117976662.dir/0003_led_gen//c4e_dvp_core_led_component_configuration.pl  --do_build_sim=0  ]
+Info: led: Done RTL generation for module 'c4e_dvp_core_led'
+Info: led: "c4e_dvp_core" instantiated altera_avalon_pio "led"
+Info: peripheral_bridge: "c4e_dvp_core" instantiated altera_avalon_mm_bridge "peripheral_bridge"
+Info: sdram: Starting RTL generation for module 'c4e_dvp_core_sdram'
+Info: sdram:   Generation command is [exec C:/develop/quartus/20.1le/quartus/bin64/perl/bin/perl.exe -I C:/develop/quartus/20.1le/quartus/bin64/perl/lib -I C:/develop/quartus/20.1le/quartus/sopc_builder/bin/europa -I C:/develop/quartus/20.1le/quartus/sopc_builder/bin -I C:/develop/quartus/20.1le/quartus/../ip/altera/sopc_builder_ip/common -I C:/develop/quartus/20.1le/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/develop/quartus/20.1le/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=c4e_dvp_core_sdram --dir=C:/Users/Regulus/AppData/Local/Temp/alt9359_3780123013117976662.dir/0005_sdram_gen/ --quartus_dir=C:/develop/quartus/20.1le/quartus --verilog --config=C:/Users/Regulus/AppData/Local/Temp/alt9359_3780123013117976662.dir/0005_sdram_gen//c4e_dvp_core_sdram_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram: Done RTL generation for module 'c4e_dvp_core_sdram'
+Info: sdram: "c4e_dvp_core" instantiated altera_avalon_new_sdram_controller "sdram"
+Info: sysid: "c4e_dvp_core" instantiated altera_avalon_sysid_qsys "sysid"
+Info: avalon_st_adapter: Inserting channel_adapter: channel_adapter_0
+Info: avalon_st_adapter_001: Inserting channel_adapter: channel_adapter_0
+Info: uart_to_avmm_bridge: "c4e_dvp_core" instantiated uart_bridge_core "uart_to_avmm_bridge"
+Info: vga: "c4e_dvp_core" instantiated peridot_vga_controller "vga"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "c4e_dvp_core" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_1: "c4e_dvp_core" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: rst_controller: "c4e_dvp_core" instantiated altera_reset_controller "rst_controller"
+Info: packets_to_master_0: "uart_to_avmm_bridge" instantiated altera_avalon_packets_to_master "packets_to_master_0"
+Info: sc_fifo_0: "uart_to_avmm_bridge" instantiated altera_avalon_sc_fifo "sc_fifo_0"
+Info: st_bytes_to_packets_0: "uart_to_avmm_bridge" instantiated altera_avalon_st_bytes_to_packets "st_bytes_to_packets_0"
+Info: st_packets_to_bytes_0: "uart_to_avmm_bridge" instantiated altera_avalon_st_packets_to_bytes "st_packets_to_bytes_0"
+Info: uart_to_bytes_0: "uart_to_avmm_bridge" instantiated uart_to_bytes "uart_to_bytes_0"
+Info: avalon_st_adapter: "uart_to_avmm_bridge" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_001: "uart_to_avmm_bridge" instantiated altera_avalon_st_adapter "avalon_st_adapter_001"
+Info: uart_to_avmm_bridge_avm_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "uart_to_avmm_bridge_avm_translator"
+Info: peripheral_bridge_s0_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "peripheral_bridge_s0_translator"
+Info: uart_to_avmm_bridge_avm_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "uart_to_avmm_bridge_avm_agent"
+Info: peripheral_bridge_s0_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "peripheral_bridge_s0_agent"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: uart_to_avmm_bridge_avm_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "uart_to_avmm_bridge_avm_limiter"
+Info: Reusing file C:/PROJECT/PERIDOT/c72_ubshield/fpga/dvp_capture/c4e_dvp_core/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: sdram_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "sdram_s1_burst_adapter"
+Info: Reusing file C:/PROJECT/PERIDOT/c72_ubshield/fpga/dvp_capture/c4e_dvp_core/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file C:/PROJECT/PERIDOT/c72_ubshield/fpga/dvp_capture/c4e_dvp_core/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/PROJECT/PERIDOT/c72_ubshield/fpga/dvp_capture/c4e_dvp_core/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/PROJECT/PERIDOT/c72_ubshield/fpga/dvp_capture/c4e_dvp_core/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: sdram_s1_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "sdram_s1_rsp_width_adapter"
+Info: Reusing file C:/PROJECT/PERIDOT/c72_ubshield/fpga/dvp_capture/c4e_dvp_core/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/PROJECT/PERIDOT/c72_ubshield/fpga/dvp_capture/c4e_dvp_core/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: Reusing file C:/PROJECT/PERIDOT/c72_ubshield/fpga/dvp_capture/c4e_dvp_core/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_001: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_001"
+Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_1" instantiated altera_merlin_router "router_001"
+Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file C:/PROJECT/PERIDOT/c72_ubshield/fpga/dvp_capture/c4e_dvp_core/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/PROJECT/PERIDOT/c72_ubshield/fpga/dvp_capture/c4e_dvp_core/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: channel_adapter_0: "avalon_st_adapter" instantiated channel_adapter "channel_adapter_0"
+Info: channel_adapter_0: "avalon_st_adapter_001" instantiated channel_adapter "channel_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_001" instantiated error_adapter "error_adapter_0"
+Info: c4e_dvp_core: Done "c4e_dvp_core" with 50 modules, 76 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
