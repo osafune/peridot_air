@@ -67,7 +67,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   </table>
   <table class="blueBar">
    <tr>
-    <td class="l">2023.01.02.21:12:45</td>
+    <td class="l">2023.01.11.04:11:59</td>
     <td class="r">Datasheet</td>
    </tr>
   </table>
@@ -116,7 +116,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      </a> altera_avalon_sysid_qsys 20.1
      <br/>&#160;&#160;
      <a href="#module_vga"><b>vga</b>
-     </a> peridot_vga_controller 20.1</span>
+     </a> peridot_vga_controller 20.0.99</span>
    </div>
   </div>
   <div style="width:100% ;  height:10px"> </div>
@@ -313,6 +313,14 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        <tr>
         <td class="parametername">AVS_CLOCKFREQ</td>
         <td class="parametervalue">25000000</td>
+       </tr>
+       <tr>
+        <td class="parametername">BURSTCOUNT_WIDTH</td>
+        <td class="parametervalue">8</td>
+       </tr>
+       <tr>
+        <td class="parametername">TRANSCYCLE_WIDTH</td>
+        <td class="parametervalue">22</td>
        </tr>
        <tr>
         <td class="parametername">DVP_FIFO_DEPTH</td>
@@ -1329,11 +1337,11 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <table>
        <tr>
         <td class="parametername">id</td>
-        <td class="parametervalue">-1608318718</td>
+        <td class="parametervalue">-1608318703</td>
        </tr>
        <tr>
         <td class="parametername">timestamp</td>
-        <td class="parametervalue">1672661565</td>
+        <td class="parametervalue">1673377919</td>
        </tr>
        <tr>
         <td class="parametername">deviceFamily</td>
@@ -1354,11 +1362,11 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <table>
        <tr>
         <td class="parametername">ID</td>
-        <td class="parametervalue">2686648578</td>
+        <td class="parametervalue">2686648593</td>
        </tr>
        <tr>
         <td class="parametername">TIMESTAMP</td>
-        <td class="parametervalue">1672661565</td>
+        <td class="parametervalue">1673377919</td>
        </tr>
       </table>
      </td>
@@ -1379,7 +1387,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <table>
        <tr>
         <td class="parametername">AUTO_GENERATION_ID</td>
-        <td class="parametervalue">1672661565</td>
+        <td class="parametervalue">1673377919</td>
        </tr>
        <tr>
         <td class="parametername">AUTO_UNIQUE_ID</td>
@@ -2153,7 +2161,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   <a name="module_vga"> </a>
   <div>
    <hr/>
-   <h2>vga</h2>peridot_vga_controller v20.1
+   <h2>vga</h2>peridot_vga_controller v20.0.99
    <br/>
    <div class="greydiv">
     <table class="connectionboxes">
@@ -2228,72 +2236,96 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
         <td class="parametervalue">EP4CE6E22C8</td>
        </tr>
        <tr>
-        <td class="parametername">BURSTLENGTH_WIDTH</td>
-        <td class="parametervalue">9</td>
+        <td class="parametername">CSR_CLOCKFREQ</td>
+        <td class="parametervalue">25000000</td>
        </tr>
        <tr>
-        <td class="parametername">VGACLOCK_FREQUENCY</td>
-        <td class="parametervalue">74286000</td>
+        <td class="parametername">AVM_CLOCKFREQ</td>
+        <td class="parametervalue">100000000</td>
        </tr>
        <tr>
-        <td class="parametername">H_TOTAL</td>
-        <td class="parametervalue">800</td>
+        <td class="parametername">FIFORESETCOUNT</td>
+        <td class="parametervalue">10</td>
        </tr>
        <tr>
-        <td class="parametername">H_SYNC</td>
-        <td class="parametervalue">96</td>
-       </tr>
-       <tr>
-        <td class="parametername">H_BACKP</td>
-        <td class="parametervalue">48</td>
-       </tr>
-       <tr>
-        <td class="parametername">H_ACTIVE</td>
-        <td class="parametervalue">640</td>
-       </tr>
-       <tr>
-        <td class="parametername">V_TOTAL</td>
-        <td class="parametervalue">525</td>
-       </tr>
-       <tr>
-        <td class="parametername">V_SYNC</td>
-        <td class="parametervalue">2</td>
-       </tr>
-       <tr>
-        <td class="parametername">V_BACKP</td>
-        <td class="parametervalue">33</td>
-       </tr>
-       <tr>
-        <td class="parametername">V_ACTIVE</td>
-        <td class="parametervalue">480</td>
-       </tr>
-       <tr>
-        <td class="parametername">USE_AUDIOSTREAM</td>
-        <td class="parametervalue">OFF</td>
+        <td class="parametername">FIFODEPTH_WIDTH</td>
+        <td class="parametervalue">10</td>
        </tr>
        <tr>
         <td class="parametername">VIDEO_INTERFACE</td>
         <td class="parametervalue">DVI</td>
        </tr>
        <tr>
-        <td class="parametername">PIXEL_COLORORDER</td>
-        <td class="parametervalue">YUV422</td>
+        <td class="parametername">VGACLOCK_FREQUENCY</td>
+        <td class="parametervalue">65000000</td>
        </tr>
        <tr>
-        <td class="parametername">PIXEL_DATAORDER</td>
-        <td class="parametervalue">BYTE</td>
+        <td class="parametername">H_TOTAL</td>
+        <td class="parametervalue">1344</td>
+       </tr>
+       <tr>
+        <td class="parametername">H_SYNC</td>
+        <td class="parametervalue">136</td>
+       </tr>
+       <tr>
+        <td class="parametername">H_BACKP</td>
+        <td class="parametervalue">160</td>
+       </tr>
+       <tr>
+        <td class="parametername">H_ACTIVE</td>
+        <td class="parametervalue">1024</td>
+       </tr>
+       <tr>
+        <td class="parametername">V_TOTAL</td>
+        <td class="parametervalue">806</td>
+       </tr>
+       <tr>
+        <td class="parametername">V_SYNC</td>
+        <td class="parametervalue">6</td>
+       </tr>
+       <tr>
+        <td class="parametername">V_BACKP</td>
+        <td class="parametervalue">29</td>
+       </tr>
+       <tr>
+        <td class="parametername">V_ACTIVE</td>
+        <td class="parametervalue">768</td>
+       </tr>
+       <tr>
+        <td class="parametername">USE_AUDIOSTREAM</td>
+        <td class="parametervalue">OFF</td>
+       </tr>
+       <tr>
+        <td class="parametername">PIXEL_QUEUE</td>
+        <td class="parametervalue">2</td>
+       </tr>
+       <tr>
+        <td class="parametername">BURSTCOUNT_WIDTH</td>
+        <td class="parametervalue">8</td>
        </tr>
        <tr>
         <td class="parametername">LINEOFFSETBYTES</td>
         <td class="parametervalue">2560</td>
        </tr>
        <tr>
+        <td class="parametername">PIXEL_DATAORDER</td>
+        <td class="parametervalue">BYTE</td>
+       </tr>
+       <tr>
+        <td class="parametername">PIXEL_COLORORDER</td>
+        <td class="parametervalue">YUV422</td>
+       </tr>
+       <tr>
+        <td class="parametername">INTERFACE_MODE</td>
+        <td class="parametervalue">DVI</td>
+       </tr>
+       <tr>
         <td class="parametername">DOTCLOCK_FREQUENCY</td>
-        <td class="parametervalue">74.286</td>
+        <td class="parametervalue">65.0</td>
        </tr>
        <tr>
         <td class="parametername">SUPPORT_RESOLUTION</td>
-        <td class="parametervalue">0</td>
+        <td class="parametervalue">3</td>
        </tr>
        <tr>
         <td class="parametername">VIDEO_HTOTAL</td>
@@ -2358,23 +2390,23 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">VIDEO_CLOCK_HZ</td>
-        <td class="parametervalue">74286000</td>
+        <td class="parametervalue">65000000</td>
        </tr>
        <tr>
         <td class="parametername">VIDEO_HACTIVE</td>
-        <td class="parametervalue">640</td>
+        <td class="parametervalue">1024</td>
        </tr>
        <tr>
         <td class="parametername">VIDEO_HBACKP</td>
-        <td class="parametervalue">48</td>
+        <td class="parametervalue">160</td>
        </tr>
        <tr>
         <td class="parametername">VIDEO_HSYNC</td>
-        <td class="parametervalue">96</td>
+        <td class="parametervalue">136</td>
        </tr>
        <tr>
         <td class="parametername">VIDEO_HTOTAL</td>
-        <td class="parametervalue">800</td>
+        <td class="parametervalue">1344</td>
        </tr>
        <tr>
         <td class="parametername">VIDEO_INTERFACE</td>
@@ -2382,23 +2414,23 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">VIDEO_VACTIVE</td>
-        <td class="parametervalue">480</td>
+        <td class="parametervalue">768</td>
        </tr>
        <tr>
         <td class="parametername">VIDEO_VBACKP</td>
-        <td class="parametervalue">33</td>
+        <td class="parametervalue">29</td>
        </tr>
        <tr>
         <td class="parametername">VIDEO_VSYNC</td>
-        <td class="parametervalue">2</td>
+        <td class="parametervalue">6</td>
        </tr>
        <tr>
         <td class="parametername">VIDEO_VTOTAL</td>
-        <td class="parametervalue">525</td>
+        <td class="parametervalue">806</td>
        </tr>
        <tr>
-        <td class="parametername">VRAM_DATAORDER</td>
-        <td class="parametervalue">"BYTE"</td>
+        <td class="parametername">VRAM_DATAORDER_BYTE</td>
+        <td class="parametervalue">1</td>
        </tr>
        <tr>
         <td class="parametername">VRAM_LINEBYTES</td>
@@ -2406,15 +2438,19 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">VRAM_PIXELCOLOR</td>
-        <td class="parametervalue">"YUV422"</td>
+        <td class="parametervalue">3</td>
+       </tr>
+       <tr>
+        <td class="parametername">VRAM_PIXELCOLOR_YUV422</td>
+        <td class="parametervalue">1</td>
        </tr>
        <tr>
         <td class="parametername">VRAM_VIEWHEIGHT</td>
-        <td class="parametervalue">480</td>
+        <td class="parametervalue">768</td>
        </tr>
        <tr>
         <td class="parametername">VRAM_VIEWWIDTH</td>
-        <td class="parametervalue">640</td>
+        <td class="parametervalue">1024</td>
        </tr>
       </table>
      </td>
@@ -2423,8 +2459,8 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   </div>
   <table class="blueBar">
    <tr>
-    <td class="l">generation took 0.02 seconds</td>
-    <td class="r">rendering took 0.08 seconds</td>
+    <td class="l">generation took 0.00 seconds</td>
+    <td class="r">rendering took 0.06 seconds</td>
    </tr>
   </table>
  </body>

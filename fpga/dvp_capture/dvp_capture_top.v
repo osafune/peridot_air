@@ -2,7 +2,7 @@
 // TITLE : PERIDOT-Air / DVP capture sample
 //
 //     DESIGN : s.osafune@j7system.jp (J-7SYSTEM WORKS LIMITED)
-//     DATE   : 2023/01/02
+//     DATE   : 2023/01/06
 //
 //
 // ===================================================================
@@ -146,8 +146,10 @@ module dvp_capture_top(
 		.locked		(qsys_reset_n_sig)
 	);
 
-	vgapll		// c0:25.2MHz, c1:c0x5(126.0MHz)
+//	vgapll		// c0:25.2MHz, c1:c0x5(126.0MHz)
 //	wvgapll		// c0:30.0MHz, c1:c0 x5(150.0MHz)
+//	svgapll		// c0:40.0MHz, c1:c0 x5(200.0MHz)
+	xgapll		// c0:65.0MHz, c1:c0 x5(325.0MHz)
 //	hdpll		// c0:74.286MHz, c1:c0x5(371.43MHz)
 	u1 (
 		.areset		(reset_sig),

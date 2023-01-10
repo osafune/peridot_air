@@ -9,6 +9,38 @@
    categories="System" />
  <parameter name="bonusData"><![CDATA[bonusData 
 {
+   element c4e_dvp_core
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone IV E";
+         type = "String";
+      }
+   }
+   element c4e_dvp_core
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone IV E";
+         type = "String";
+      }
+   }
+   element c4e_dvp_core
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone IV E";
+         type = "String";
+      }
+   }
+   element c4e_dvp_core
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone IV E";
+         type = "String";
+      }
+   }
    element c4e_hmd_ov_core
    {
       datum _originalDeviceFamily
@@ -562,10 +594,12 @@
  <module name="cam" kind="peridot_cam" version="20.1" enabled="1">
   <parameter name="AVM_CLOCKFREQ" value="100000000" />
   <parameter name="AVS_CLOCKFREQ" value="25000000" />
+  <parameter name="BURSTCOUNT_WIDTH" value="8" />
   <parameter name="DVP_BYTESWAP" value="OFF" />
   <parameter name="DVP_FIFO_DEPTH" value="12" />
   <parameter name="HW_TCL_DEBUG" value="true" />
   <parameter name="SCCB_CLOCKFREQ" value="400000" />
+  <parameter name="TRANSCYCLE_WIDTH" value="22" />
   <parameter name="USE_PERIDOT_I2C" value="OFF" />
   <parameter name="USE_SCCB" value="true" />
  </module>
@@ -647,7 +681,7 @@
    kind="altera_avalon_sysid_qsys"
    version="20.1"
    enabled="1">
-  <parameter name="id" value="-1608318718" />
+  <parameter name="id" value="-1608318703" />
  </module>
  <module
    name="uart_to_avmm_bridge"
@@ -665,21 +699,29 @@
   <parameter name="AUTO_GENERATION_ID" value="0" />
   <parameter name="AUTO_UNIQUE_ID">$${FILENAME}_uart_to_avmm_bridge</parameter>
  </module>
- <module name="vga" kind="peridot_vga_controller" version="20.1" enabled="1">
+ <module
+   name="vga"
+   kind="peridot_vga_controller"
+   version="20.0.99"
+   enabled="1">
+  <parameter name="AVM_CLOCKFREQ" value="100000000" />
+  <parameter name="BURSTCOUNT_WIDTH" value="8" />
+  <parameter name="CSR_CLOCKFREQ" value="25000000" />
   <parameter name="DEVICE_FAMILY" value="Cyclone IV E" />
-  <parameter name="DOTCLOCK_FREQUENCY" value="74.286" />
+  <parameter name="DOTCLOCK_FREQUENCY" value="65.0" />
+  <parameter name="INTERFACE_MODE" value="DVI" />
   <parameter name="LINEOFFSETBYTES" value="2560" />
   <parameter name="PART_NAME" value="EP4CE6E22C8" />
   <parameter name="PCMSAMPLE_FREQUENCY" value="44100" />
   <parameter name="PIXEL_COLORORDER" value="YUV422" />
   <parameter name="PIXEL_DATAORDER" value="BYTE" />
+  <parameter name="PIXEL_QUEUE" value="2" />
   <parameter name="SUPPORT_AUDIOSTREAM" value="0" />
-  <parameter name="SUPPORT_RESOLUTION" value="0" />
+  <parameter name="SUPPORT_RESOLUTION" value="3" />
   <parameter name="VIDEO_HACTIVE" value="480" />
   <parameter name="VIDEO_HBACKP" value="0" />
   <parameter name="VIDEO_HSYNC" value="40" />
   <parameter name="VIDEO_HTOTAL" value="525" />
-  <parameter name="VIDEO_INTERFACE" value="DVI" />
   <parameter name="VIDEO_VACTIVE" value="272" />
   <parameter name="VIDEO_VBACKP" value="0" />
   <parameter name="VIDEO_VSYNC" value="3" />

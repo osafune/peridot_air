@@ -49,13 +49,13 @@ module c4e_dvp_core (
 	wire  [31:0] vga_m1_address;                                       // vga:avm_m1_address -> mm_interconnect_0:vga_m1_address
 	wire         vga_m1_read;                                          // vga:avm_m1_read -> mm_interconnect_0:vga_m1_read
 	wire         vga_m1_readdatavalid;                                 // mm_interconnect_0:vga_m1_readdatavalid -> vga:avm_m1_readdatavalid
-	wire   [9:0] vga_m1_burstcount;                                    // vga:avm_m1_burstcount -> mm_interconnect_0:vga_m1_burstcount
+	wire   [8:0] vga_m1_burstcount;                                    // vga:avm_m1_burstcount -> mm_interconnect_0:vga_m1_burstcount
 	wire         cam_m1_waitrequest;                                   // mm_interconnect_0:cam_m1_waitrequest -> cam:avm_m1_waitrequest
 	wire  [31:0] cam_m1_address;                                       // cam:avm_m1_address -> mm_interconnect_0:cam_m1_address
 	wire   [3:0] cam_m1_byteenable;                                    // cam:avm_m1_byteenable -> mm_interconnect_0:cam_m1_byteenable
 	wire         cam_m1_write;                                         // cam:avm_m1_write -> mm_interconnect_0:cam_m1_write
 	wire  [31:0] cam_m1_writedata;                                     // cam:avm_m1_writedata -> mm_interconnect_0:cam_m1_writedata
-	wire   [4:0] cam_m1_burstcount;                                    // cam:avm_m1_burstcount -> mm_interconnect_0:cam_m1_burstcount
+	wire   [8:0] cam_m1_burstcount;                                    // cam:avm_m1_burstcount -> mm_interconnect_0:cam_m1_burstcount
 	wire  [31:0] mm_interconnect_0_peripheral_bridge_s0_readdata;      // peripheral_bridge:s0_readdata -> mm_interconnect_0:peripheral_bridge_s0_readdata
 	wire         mm_interconnect_0_peripheral_bridge_s0_waitrequest;   // peripheral_bridge:s0_waitrequest -> mm_interconnect_0:peripheral_bridge_s0_waitrequest
 	wire         mm_interconnect_0_peripheral_bridge_s0_debugaccess;   // mm_interconnect_0:peripheral_bridge_s0_debugaccess -> peripheral_bridge:s0_debugaccess
@@ -110,6 +110,8 @@ module c4e_dvp_core (
 	peridot_cam #(
 		.AVM_CLOCKFREQ     (100000000),
 		.AVS_CLOCKFREQ     (25000000),
+		.BURSTCOUNT_WIDTH  (8),
+		.TRANSCYCLE_WIDTH  (22),
 		.DVP_FIFO_DEPTH    (12),
 		.DVP_BYTESWAP      ("OFF"),
 		.USE_SCCBINTERFACE ("ON"),
@@ -130,8 +132,8 @@ module c4e_dvp_core (
 		.avm_m1_write       (cam_m1_write),                         //         .write
 		.avm_m1_writedata   (cam_m1_writedata),                     //         .writedata
 		.avm_m1_byteenable  (cam_m1_byteenable),                    //         .byteenable
-		.avm_m1_burstcount  (cam_m1_burstcount),                    //         .burstcount
 		.avm_m1_waitrequest (cam_m1_waitrequest),                   //         .waitrequest
+		.avm_m1_burstcount  (cam_m1_burstcount),                    //         .burstcount
 		.cam_clk            (dvp_pclk),                             //      dvp.pclk
 		.cam_data           (dvp_data),                             //         .data
 		.cam_href           (dvp_href),                             //         .href
@@ -235,21 +237,23 @@ module c4e_dvp_core (
 
 	peridot_vga #(
 		.DEVICE_FAMILY       ("Cyclone IV E"),
-		.BURSTLENGTH_WIDTH   (9),
-		.VGACLOCK_FREQUENCY  (74286000),
-		.H_TOTAL             (800),
-		.H_SYNC              (96),
-		.H_BACKP             (48),
-		.H_ACTIVE            (640),
-		.V_TOTAL             (525),
-		.V_SYNC              (2),
-		.V_BACKP             (33),
-		.V_ACTIVE            (480),
-		.USE_AUDIOSTREAM     ("OFF"),
+		.FIFORESETCOUNT      (10),
+		.FIFODEPTH_WIDTH     (10),
 		.VIDEO_INTERFACE     ("DVI"),
-		.PIXEL_COLORORDER    ("YUV422"),
-		.PIXEL_DATAORDER     ("BYTE"),
+		.VGACLOCK_FREQUENCY  (65000000),
+		.H_TOTAL             (1344),
+		.H_SYNC              (136),
+		.H_BACKP             (160),
+		.H_ACTIVE            (1024),
+		.V_TOTAL             (806),
+		.V_SYNC              (6),
+		.V_BACKP             (29),
+		.V_ACTIVE            (768),
+		.USE_AUDIOSTREAM     ("OFF"),
+		.BURSTCOUNT_WIDTH    (8),
 		.LINEOFFSETBYTES     (2560),
+		.PIXEL_DATAORDER     ("BYTE"),
+		.PIXEL_COLORORDER    ("YUV422"),
 		.PCMSAMPLE_FREQUENCY (44100)
 	) vga (
 		.csi_csr_clk          (clk_25m_clk),                         // csr_clk.clk

@@ -49,7 +49,7 @@ module c4e_dvp_core_sysid (
 
   wire    [ 31: 0] readdata;
   //control_slave, which is an e_avalon_slave
-  assign readdata = address ? 1672661565 : 2686648578;
+  assign readdata = address ? 1673377919 : 2686648593;
 
 endmodule
 

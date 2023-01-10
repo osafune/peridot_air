@@ -7,6 +7,10 @@
 			dvp_href      : in    std_logic                     := 'X';             -- href
 			dvp_vsync     : in    std_logic                     := 'X';             -- vsync
 			dvp_reseto_n  : out   std_logic;                                        -- reseto_n
+			host_txd      : out   std_logic;                                        -- txd
+			host_rxd      : in    std_logic                     := 'X';             -- rxd
+			host_cts      : in    std_logic                     := 'X';             -- cts
+			host_rts      : out   std_logic;                                        -- rts
 			led_export    : out   std_logic_vector(3 downto 0);                     -- export
 			reset_reset_n : in    std_logic                     := 'X';             -- reset_n
 			sccb_sck      : inout std_logic                     := 'X';             -- sck
@@ -25,11 +29,7 @@
 			tmds_data     : out   std_logic_vector(2 downto 0);                     -- data
 			tmds_data_n   : out   std_logic_vector(2 downto 0);                     -- data_n
 			tmds_clock    : out   std_logic;                                        -- clock
-			tmds_clock_n  : out   std_logic;                                        -- clock_n
-			host_txd      : out   std_logic;                                        -- txd
-			host_rxd      : in    std_logic                     := 'X';             -- rxd
-			host_cts      : in    std_logic                     := 'X';             -- cts
-			host_rts      : out   std_logic                                         -- rts
+			tmds_clock_n  : out   std_logic                                         -- clock_n
 		);
 	end component c4e_dvp_core;
 
@@ -42,6 +42,10 @@
 			dvp_href      => CONNECTED_TO_dvp_href,      --         .href
 			dvp_vsync     => CONNECTED_TO_dvp_vsync,     --         .vsync
 			dvp_reseto_n  => CONNECTED_TO_dvp_reseto_n,  --         .reseto_n
+			host_txd      => CONNECTED_TO_host_txd,      --     host.txd
+			host_rxd      => CONNECTED_TO_host_rxd,      --         .rxd
+			host_cts      => CONNECTED_TO_host_cts,      --         .cts
+			host_rts      => CONNECTED_TO_host_rts,      --         .rts
 			led_export    => CONNECTED_TO_led_export,    --      led.export
 			reset_reset_n => CONNECTED_TO_reset_reset_n, --    reset.reset_n
 			sccb_sck      => CONNECTED_TO_sccb_sck,      --     sccb.sck
@@ -60,10 +64,6 @@
 			tmds_data     => CONNECTED_TO_tmds_data,     --         .data
 			tmds_data_n   => CONNECTED_TO_tmds_data_n,   --         .data_n
 			tmds_clock    => CONNECTED_TO_tmds_clock,    --         .clock
-			tmds_clock_n  => CONNECTED_TO_tmds_clock_n,  --         .clock_n
-			host_txd      => CONNECTED_TO_host_txd,      --     host.txd
-			host_rxd      => CONNECTED_TO_host_rxd,      --         .rxd
-			host_cts      => CONNECTED_TO_host_cts,      --         .cts
-			host_rts      => CONNECTED_TO_host_rts       --         .rts
+			tmds_clock_n  => CONNECTED_TO_tmds_clock_n   --         .clock_n
 		);
 

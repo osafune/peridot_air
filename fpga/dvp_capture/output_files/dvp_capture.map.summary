@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Mon Jan 02 21:14:47 2023
+Analysis & Synthesis Status : Successful - Wed Jan 11 04:13:06 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : dvp_capture
 Top-level Entity Name : dvp_capture_top
 Family : Cyclone IV E
-Total logic elements : 3,646
-    Total combinational functions : 2,784
-    Dedicated logic registers : 2,341
-Total registers : 2357
+Total logic elements : 4,020
+    Total combinational functions : 3,045
+    Dedicated logic registers : 2,530
+Total registers : 2546
 Total pins : 80
 Total virtual pins : 0
-Total memory bits : 51,200
+Total memory bits : 67,584
 Embedded Multiplier 9-bit elements : 4
 Total PLLs : 2

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="c4e_dvp_core" kind="c4e_dvp_core" version="1.0" fabric="QSYS">
  <!-- Format version 20.1 720 (Future versions may contain additional information.) -->
- <!-- 2023.01.02.21:12:45 -->
+ <!-- 2023.01.11.04:11:59 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1672661565</value>
+  <value>1673377919</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -168,6 +168,22 @@ the requested settings for a module instance. -->
    <sysinfo_type>CLOCK_RATE</sysinfo_type>
    <sysinfo_arg>s1_clock</sysinfo_arg>
   </parameter>
+  <parameter name="BURSTCOUNT_WIDTH">
+   <type>int</type>
+   <value>8</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="TRANSCYCLE_WIDTH">
+   <type>int</type>
+   <value>22</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
   <parameter name="DVP_FIFO_DEPTH">
    <type>int</type>
    <value>12</value>
@@ -204,7 +220,7 @@ the requested settings for a module instance. -->
    <type>java.lang.String</type>
    <value>OFF</value>
    <derived>false</derived>
-   <enabled>false</enabled>
+   <enabled>true</enabled>
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
@@ -1134,16 +1150,16 @@ parameters are a RESULT of the module parameters. -->
     <role>byteenable</role>
    </port>
    <port>
-    <name>avm_m1_burstcount</name>
-    <direction>Output</direction>
-    <width>5</width>
-    <role>burstcount</role>
-   </port>
-   <port>
     <name>avm_m1_waitrequest</name>
     <direction>Input</direction>
     <width>1</width>
     <role>waitrequest</role>
+   </port>
+   <port>
+    <name>avm_m1_burstcount</name>
+    <direction>Output</direction>
+    <width>9</width>
+    <role>burstcount</role>
    </port>
    <memoryBlock>
     <isBridge>false</isBridge>
@@ -4655,11 +4671,11 @@ parameters are a RESULT of the module parameters. -->
 the requested settings for a module instance. -->
   <assignment>
    <name>embeddedsw.CMacro.ID</name>
-   <value>2686648578</value>
+   <value>2686648593</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.TIMESTAMP</name>
-   <value>1672661565</value>
+   <value>1673377919</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.compatible</name>
@@ -4675,11 +4691,11 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.id</name>
-   <value>2686648578</value>
+   <value>2686648593</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.timestamp</name>
-   <value>1672661565</value>
+   <value>1673377919</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.vendor</name>
@@ -4687,7 +4703,7 @@ the requested settings for a module instance. -->
   </assignment>
   <parameter name="id">
    <type>int</type>
-   <value>-1608318718</value>
+   <value>-1608318703</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -4695,7 +4711,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="timestamp">
    <type>int</type>
-   <value>1672661565</value>
+   <value>1673377919</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -5161,7 +5177,7 @@ parameters are a RESULT of the module parameters. -->
 the requested settings for a module instance. -->
   <parameter name="AUTO_GENERATION_ID">
    <type>java.lang.Integer</type>
-   <value>1672661565</value>
+   <value>1673377919</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -8835,7 +8851,7 @@ parameters are a RESULT of the module parameters. -->
    </port>
   </interface>
  </module>
- <module name="vga" kind="peridot_vga_controller" version="20.1" path="vga">
+ <module name="vga" kind="peridot_vga_controller" version="20.0.99" path="vga">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <assignment>
@@ -8844,23 +8860,23 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.VIDEO_CLOCK_HZ</name>
-   <value>74286000</value>
+   <value>65000000</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.VIDEO_HACTIVE</name>
-   <value>640</value>
+   <value>1024</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.VIDEO_HBACKP</name>
-   <value>48</value>
+   <value>160</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.VIDEO_HSYNC</name>
-   <value>96</value>
+   <value>136</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.VIDEO_HTOTAL</name>
-   <value>800</value>
+   <value>1344</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.VIDEO_INTERFACE</name>
@@ -8868,23 +8884,23 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.VIDEO_VACTIVE</name>
-   <value>480</value>
+   <value>768</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.VIDEO_VBACKP</name>
-   <value>33</value>
+   <value>29</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.VIDEO_VSYNC</name>
-   <value>2</value>
+   <value>6</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.VIDEO_VTOTAL</name>
-   <value>525</value>
+   <value>806</value>
   </assignment>
   <assignment>
-   <name>embeddedsw.CMacro.VRAM_DATAORDER</name>
-   <value>"BYTE"</value>
+   <name>embeddedsw.CMacro.VRAM_DATAORDER_BYTE</name>
+   <value>1</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.VRAM_LINEBYTES</name>
@@ -8892,15 +8908,19 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.VRAM_PIXELCOLOR</name>
-   <value>"YUV422"</value>
+   <value>3</value>
+  </assignment>
+  <assignment>
+   <name>embeddedsw.CMacro.VRAM_PIXELCOLOR_YUV422</name>
+   <value>1</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.VRAM_VIEWHEIGHT</name>
-   <value>480</value>
+   <value>768</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.VRAM_VIEWWIDTH</name>
-   <value>640</value>
+   <value>1024</value>
   </assignment>
   <parameter name="DEVICE_FAMILY">
    <type>java.lang.String</type>
@@ -8920,9 +8940,45 @@ the requested settings for a module instance. -->
    <valid>true</valid>
    <sysinfo_type>DEVICE</sysinfo_type>
   </parameter>
-  <parameter name="BURSTLENGTH_WIDTH">
+  <parameter name="CSR_CLOCKFREQ">
    <type>int</type>
-   <value>9</value>
+   <value>25000000</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+   <sysinfo_type>CLOCK_RATE</sysinfo_type>
+   <sysinfo_arg>csr_clk</sysinfo_arg>
+  </parameter>
+  <parameter name="AVM_CLOCKFREQ">
+   <type>int</type>
+   <value>100000000</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+   <sysinfo_type>CLOCK_RATE</sysinfo_type>
+   <sysinfo_arg>m1_clk</sysinfo_arg>
+  </parameter>
+  <parameter name="FIFORESETCOUNT">
+   <type>int</type>
+   <value>10</value>
+   <derived>true</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="FIFODEPTH_WIDTH">
+   <type>int</type>
+   <value>10</value>
+   <derived>true</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="VIDEO_INTERFACE">
+   <type>java.lang.String</type>
+   <value>DVI</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -8930,7 +8986,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="VGACLOCK_FREQUENCY">
    <type>int</type>
-   <value>74286000</value>
+   <value>65000000</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -8938,7 +8994,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="H_TOTAL">
    <type>int</type>
-   <value>800</value>
+   <value>1344</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -8946,7 +9002,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="H_SYNC">
    <type>int</type>
-   <value>96</value>
+   <value>136</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -8954,7 +9010,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="H_BACKP">
    <type>int</type>
-   <value>48</value>
+   <value>160</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -8962,7 +9018,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="H_ACTIVE">
    <type>int</type>
-   <value>640</value>
+   <value>1024</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -8970,7 +9026,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="V_TOTAL">
    <type>int</type>
-   <value>525</value>
+   <value>806</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -8978,7 +9034,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="V_SYNC">
    <type>int</type>
-   <value>2</value>
+   <value>6</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -8986,7 +9042,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="V_BACKP">
    <type>int</type>
-   <value>33</value>
+   <value>29</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -8994,7 +9050,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="V_ACTIVE">
    <type>int</type>
-   <value>480</value>
+   <value>768</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -9008,25 +9064,17 @@ the requested settings for a module instance. -->
    <visible>false</visible>
    <valid>true</valid>
   </parameter>
-  <parameter name="VIDEO_INTERFACE">
-   <type>java.lang.String</type>
-   <value>DVI</value>
+  <parameter name="PIXEL_QUEUE">
+   <type>int</type>
+   <value>2</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <parameter name="PIXEL_COLORORDER">
-   <type>java.lang.String</type>
-   <value>YUV422</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="PIXEL_DATAORDER">
-   <type>java.lang.String</type>
-   <value>BYTE</value>
+  <parameter name="BURSTCOUNT_WIDTH">
+   <type>int</type>
+   <value>8</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -9040,9 +9088,33 @@ the requested settings for a module instance. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
+  <parameter name="PIXEL_DATAORDER">
+   <type>java.lang.String</type>
+   <value>BYTE</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="PIXEL_COLORORDER">
+   <type>java.lang.String</type>
+   <value>YUV422</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="INTERFACE_MODE">
+   <type>java.lang.String</type>
+   <value>DVI</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
   <parameter name="DOTCLOCK_FREQUENCY">
    <type>double</type>
-   <value>74.286</value>
+   <value>65.0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -9050,7 +9122,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="SUPPORT_RESOLUTION">
    <type>int</type>
-   <value>0</value>
+   <value>3</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -9125,7 +9197,7 @@ the requested settings for a module instance. -->
    <value>0</value>
    <derived>false</derived>
    <enabled>false</enabled>
-   <visible>true</visible>
+   <visible>false</visible>
    <valid>true</valid>
   </parameter>
   <parameter name="PCMSAMPLE_FREQUENCY">
@@ -9133,7 +9205,7 @@ the requested settings for a module instance. -->
    <value>44100</value>
    <derived>false</derived>
    <enabled>false</enabled>
-   <visible>true</visible>
+   <visible>false</visible>
    <valid>true</valid>
   </parameter>
   <parameter name="deviceFamily">
@@ -9186,6 +9258,22 @@ parameters are a RESULT of the module parameters. -->
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="clockRateKnown">
+    <type>java.lang.Boolean</type>
+    <value>true</value>
+    <derived>true</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="clockRate">
+    <type>java.lang.Long</type>
+    <value>25000000</value>
+    <derived>true</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
     <valid>true</valid>
    </parameter>
    <type>clock</type>
@@ -9720,6 +9808,22 @@ parameters are a RESULT of the module parameters. -->
     <visible>true</visible>
     <valid>true</valid>
    </parameter>
+   <parameter name="clockRateKnown">
+    <type>java.lang.Boolean</type>
+    <value>true</value>
+    <derived>true</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="clockRate">
+    <type>java.lang.Long</type>
+    <value>100000000</value>
+    <derived>true</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
    <type>clock</type>
    <isStart>false</isStart>
    <port>
@@ -10024,7 +10128,7 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>avm_m1_burstcount</name>
     <direction>Output</direction>
-    <width>10</width>
+    <width>9</width>
     <role>burstcount</role>
    </port>
    <memoryBlock>
@@ -11389,7 +11493,7 @@ parameters are a RESULT of the module parameters. -->
   <name>peridot_cam</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>PERIDOT CAM interface (Beta test version)</displayName>
+  <displayName>PERIDOT CAM interface</displayName>
   <version>20.1</version>
  </plugin>
  <plugin>
@@ -11581,8 +11685,8 @@ parameters are a RESULT of the module parameters. -->
   <name>peridot_vga_controller</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>PERIDOT VGA controller</displayName>
-  <version>20.1</version>
+  <displayName>PERIDOT VGA controller (Beta test version)</displayName>
+  <version>20.0.99</version>
  </plugin>
  <plugin>
   <instanceCount>5</instanceCount>

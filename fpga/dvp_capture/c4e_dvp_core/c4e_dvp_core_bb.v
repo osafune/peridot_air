@@ -7,6 +7,10 @@ module c4e_dvp_core (
 	dvp_href,
 	dvp_vsync,
 	dvp_reseto_n,
+	host_txd,
+	host_rxd,
+	host_cts,
+	host_rts,
 	led_export,
 	reset_reset_n,
 	sccb_sck,
@@ -25,11 +29,7 @@ module c4e_dvp_core (
 	tmds_data,
 	tmds_data_n,
 	tmds_clock,
-	tmds_clock_n,
-	host_txd,
-	host_rxd,
-	host_cts,
-	host_rts);	
+	tmds_clock_n);	
 
 	input		clk_100m_clk;
 	input		clk_25m_clk;
@@ -38,6 +38,10 @@ module c4e_dvp_core (
 	input		dvp_href;
 	input		dvp_vsync;
 	output		dvp_reseto_n;
+	output		host_txd;
+	input		host_rxd;
+	input		host_cts;
+	output		host_rts;
 	output	[3:0]	led_export;
 	input		reset_reset_n;
 	inout		sccb_sck;
@@ -57,8 +61,4 @@ module c4e_dvp_core (
 	output	[2:0]	tmds_data_n;
 	output		tmds_clock;
 	output		tmds_clock_n;
-	output		host_txd;
-	input		host_rxd;
-	input		host_cts;
-	output		host_rts;
 endmodule

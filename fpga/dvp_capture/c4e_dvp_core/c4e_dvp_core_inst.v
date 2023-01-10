@@ -6,6 +6,10 @@
 		.dvp_href      (<connected-to-dvp_href>),      //         .href
 		.dvp_vsync     (<connected-to-dvp_vsync>),     //         .vsync
 		.dvp_reseto_n  (<connected-to-dvp_reseto_n>),  //         .reseto_n
+		.host_txd      (<connected-to-host_txd>),      //     host.txd
+		.host_rxd      (<connected-to-host_rxd>),      //         .rxd
+		.host_cts      (<connected-to-host_cts>),      //         .cts
+		.host_rts      (<connected-to-host_rts>),      //         .rts
 		.led_export    (<connected-to-led_export>),    //      led.export
 		.reset_reset_n (<connected-to-reset_reset_n>), //    reset.reset_n
 		.sccb_sck      (<connected-to-sccb_sck>),      //     sccb.sck
@@ -24,10 +28,6 @@
 		.tmds_data     (<connected-to-tmds_data>),     //         .data
 		.tmds_data_n   (<connected-to-tmds_data_n>),   //         .data_n
 		.tmds_clock    (<connected-to-tmds_clock>),    //         .clock
-		.tmds_clock_n  (<connected-to-tmds_clock_n>),  //         .clock_n
-		.host_txd      (<connected-to-host_txd>),      //     host.txd
-		.host_rxd      (<connected-to-host_rxd>),      //         .rxd
-		.host_cts      (<connected-to-host_cts>),      //         .cts
-		.host_rts      (<connected-to-host_rts>)       //         .rts
+		.tmds_clock_n  (<connected-to-tmds_clock_n>)   //         .clock_n
 	);
 

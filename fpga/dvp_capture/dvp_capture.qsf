@@ -218,6 +218,8 @@ set_global_assignment -name QIP_FILE c4e_dvp_core/synthesis/c4e_dvp_core.qip
 set_global_assignment -name QIP_FILE ip/pll/syspll.qip
 set_global_assignment -name QIP_FILE ip/pll/vgapll.qip
 set_global_assignment -name QIP_FILE ip/pll/wvgapll.qip
+set_global_assignment -name QIP_FILE ip/pll/svgapll.qip
+set_global_assignment -name QIP_FILE ip/pll/xgapll.qip
 set_global_assignment -name QIP_FILE ip/pll/hdpll.qip
 set_global_assignment -name VERILOG_FILE dvp_capture_top.v
 set_global_assignment -name SDC_FILE peridot_air.sdc
@@ -227,7 +229,8 @@ set_global_assignment -name SDC_FILE peridot_air.sdc
 # Compile Settings Assignments
 # ==========================
 
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
