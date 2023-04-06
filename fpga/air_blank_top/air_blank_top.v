@@ -3,7 +3,7 @@
 //
 //     DESIGN : s.osafune@j7system.jp (J-7SYSTEM WORKS LIMITED)
 //     DATE   : 2018/01/19 -> 2018/03/22
-//     UPDATE : 2020/04/21
+//     UPDATE : 2023/04/03
 //
 // ===================================================================
 //
@@ -52,7 +52,7 @@ module air_blank_top(
 	output wire			SD_PWR_N,
 
 	// Interface: SD-card Detect
-	input wire			SW_CD_N,
+	input wire			SD_CD_N,
 
 	// Interface: SDRAM
 	output wire			SDRCLK_OUT,

@@ -57,12 +57,18 @@ Resource
 
 Documents
 ---------
-- [QuartusPrime LiteEdition ダウンロード](https://www.intel.com/content/www/us/en/software-kit/684216/intel-quartus-prime-lite-edition-design-software-version-21-1-for-windows.html)
+- [QuartusPrime 20.1.1 LiteEdition ダウンロード](https://www.intel.com/content/www/us/en/software-kit/660907/intel-quartus-prime-lite-edition-design-software-version-20-1-1-for-windows.html)
 - [Intel CycloneIV E のドキュメント](https://www.intel.co.jp/content/www/jp/ja/products/details/fpga/cyclone/iv/docs.html?s=Newest)
 - [Platform Designer のドキュメント](https://www.intel.co.jp/content/www/jp/ja/software/programmable/quartus-prime/qts-platform-designer.html)
+
+
+Buy now
+-------
+
+準備中
 
 
 Contant Us
 ----------
 - [GitHub - Shun OSAFUNE](https://github.com/osafune)
-- [Twitter - @s_osafune](https://twitter.com/s_osafune)
+- Mail - sales@j7system.jp

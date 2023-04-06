@@ -80,7 +80,7 @@ set_location_assignment PIN_8 -to EPCS_CSO_N
 set_location_assignment PIN_12 -to EPCS_DCLK
 set_location_assignment PIN_13 -to EPCS_DATA0
 set_location_assignment PIN_7 -to SD_PWR_N
-set_location_assignment PIN_25 -to SW_CD_N
+set_location_assignment PIN_25 -to SD_CD_N
 set_location_assignment PIN_28 -to SD_DAT0
 set_location_assignment PIN_31 -to SD_CMD
 set_location_assignment PIN_32 -to SD_CLK

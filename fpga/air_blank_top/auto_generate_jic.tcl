@@ -1,9 +1,10 @@
 ##################################################
 #
-# PERIDOT-AIR jic file generator
+# PERIDOT-Air jic file generator
 #
 #	2020/04/21	s.osafune@j7system.jp
-#	2021/10/13	update EPCCQ16A -> EPCQ16
+#	2021/10/13	update EPCQ16A -> EPCQ16
+#	2023/04/06	add DE0-nano device
 #
 ##################################################
 
@@ -17,16 +18,23 @@ if [string match "quartus_asm" $module] {
 	set rev_name [lindex $quartus(args) 2]
 	set prj_path "output_files/${rev_name}"
 
-#	set crom_devide "EPCS4"
-	set crom_devide "EPCQ16"
-#	set crom_devide "EPCQ16A"
+	# project device name
+
+#	set crom_device "EPCS4"
+#	set crom_device "EPCS16"
+#	set crom_device "EPCS64"
+	set crom_device "EPCQ16"
+#	set crom_device "EPCQ16A"
+#	set crom_device "EPCQ64"
+
 	set fpga_device "EP4CE6"
+#	set fpga_device "EP4CE22"
 
 	# make cof file
 
 	set cof_xml "<?xml version=\"1.0\" encoding=\"US-ASCII\" standalone=\"yes\"?>
 <cof>
-\t<eprom_name>${crom_devide}</eprom_name>
+\t<eprom_name>${crom_device}</eprom_name>
 \t<flash_loader_device>${fpga_device}</flash_loader_device>
 \t<output_filename>${prj_path}.jic</output_filename>
 \t<n_pages>1</n_pages>
