@@ -64,8 +64,8 @@ Documents
 
 Buy now
 -------
-
-準備中
+スイッチサイエンス
+[PERIDOT-Air - プロトタイピング用FPGAボード](https://www.switch-science.com/products/8908)
 
 
 Contant Us
