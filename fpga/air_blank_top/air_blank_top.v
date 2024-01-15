@@ -52,7 +52,7 @@ module air_blank_top(
 	output wire			SD_PWR_N,
 
 	// Interface: SD-card Detect
-	input wire			SD_CD_N,
+	input wire			SW_CD_N,
 
 	// Interface: SDRAM
 	output wire			SDRCLK_OUT,
