@@ -5,12 +5,12 @@ Overview
 --------
 <img src="https://raw.githubusercontent.com/osafune/peridot_air/master/img/air_thumb.jpg">
 
-PERIDOT-AIRは Intel社製 CycloneIV E FPGA(EP4CE6E22C8N)を搭載したプロトタイピング向けFPGAボードです。FPGAの他に256MbitのSDRAM、SD/MMCカードスロット、OSCおよびコンフィギュレーションROMをオンボードに搭載しており、インスタントオンで動作させることができます。  
+PERIDOT-AIRは altera社製 CycloneIV E FPGA(EP4CE6E22C8N)を搭載したプロトタイピング向けFPGAボードです。FPGAの他に256MbitのSDRAM、SD/MMCカードスロット、OSCおよびコンフィギュレーションROMをオンボードに搭載しており、インスタントオンで動作させることができます。  
 搭載FPGAは約15万ゲート規模で、ソフトマクロCPUを使った組み込み用SoC開発やディジタル回路の実装に最適です。  
 ボード形状はArduinoと同一になっており、Arduino用のホルダーや各種シールドを使うことができます。  
 
 - 搭載FPGAデバイス
-	- Intel Cyclone IV Eファミリ EP4CE6E22C8N
+	- altera Cyclone IV Eファミリ EP4CE6E22C8N
 	(6kLE, 内蔵メモリ 270kbit, PLL 2個, 18x18乗算器 15個)
 - オンボード周辺機器
 	- SDRAM 256Mbit 16bit幅×4Mワード×4バンク
@@ -58,7 +58,7 @@ Resource
 Documents
 ---------
 - [QuartusPrime 20.1.1 LiteEdition ダウンロード](https://www.intel.com/content/www/us/en/software-kit/660907/intel-quartus-prime-lite-edition-design-software-version-20-1-1-for-windows.html)
-- [Intel CycloneIV E のドキュメント](https://www.intel.co.jp/content/www/jp/ja/products/details/fpga/cyclone/iv/docs.html?s=Newest)
+- [Altera CycloneIV E のドキュメント](https://www.intel.co.jp/content/www/jp/ja/products/details/fpga/cyclone/iv/docs.html?s=Newest)
 - [Platform Designer のドキュメント](https://www.intel.co.jp/content/www/jp/ja/software/programmable/quartus-prime/qts-platform-designer.html)
 
 
