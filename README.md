@@ -71,4 +71,4 @@ Buy now
 Contant Us
 ----------
 - [GitHub - Shun OSAFUNE](https://github.com/osafune)
-- Mail - support@j7system.jp
+- Mail - support&#64;j7system.jp
